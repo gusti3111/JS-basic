@@ -1,0 +1,73 @@
+::before,::after{
+    box-sizing: border-box;
+}
+.body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 100px;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 51px;
+}
+.form-group{
+    margin:41px;
+
+}
+
+.password-container,.username-container,.email-container{
+    margin: 11px;
+}
+.username{
+    border-radius: 7px;
+    border: 1px solid black;
+   
+}
+.username:hover {
+    border-radius: 7px;
+    border: 3px solid blue;
+}
+.password{
+    border-radius: 7px;
+    border: 1px solid black;
+   
+}
+.password:hover {
+    border-radius: 7px;
+    border: 3px solid blue;
+}
+.email{
+    margin-left:32px ;
+    border-radius: 7px;
+    border: 1px solid black;
+   
+}
+.email:hover {
+    border-radius: 7px;
+    border: 3px solid blue;
+}
+
+.button-containter{
+    align-items: center;
+    justify-items: center;
+}
+
+.btn{
+    margin: 10px;
+    font-weight: bold;
+    font-size : 21px;
+    border-radius: 51px;
+    background-color: blue;
+    color: white;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    justify-content: center;
+  }

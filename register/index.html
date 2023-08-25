@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Register</h1>
+        <form class="form-group" action="post" autocomplete="off" name="form">
+            <div class="username-container">
+                <label for="username">Username</label>
+                <input type="text" class="username" id="username" name="username" onblur="validateUsername()">
+                <div class="error-message" id="usernameError"></div>
+            </div>
+            <div class="email-container">
+                <label for="email">Email</label>
+                <input type="text" class="email" name="email" id="email" onblur="validateEmail()">
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="password-container">
+                <label for="password">Password</label>
+                <input type="text" class="password" id="password" onblur="validatePassword()">
+                <div class="error-message" id="passwordError"></div>
+
+            </div>
+        </form>
+        <div class="button-container">
+            <button class="btn" onclick="signup()" id="btn">Signup</button>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

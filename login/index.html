@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+ 
+    <div class="container">
+        <h1>LOGIN</h1>
+        <form action="post" name="form" autocomplete="off" class="form-group">
+            <div class="username-container">
+                <label>username</label>
+                <input type="text" id="username" class="username" name="username" onblur="validateUsername()" >
+                <div class="error-message" id="usernameError"></div>
+    
+            </div>
+            <div class="password-container">
+                <label for="password" >password</label>
+                <input type="text" name="password" id="pass" class="password" onblur="validatePassword()">
+                <div class="error-message" id="passwordError"></div>
+    
+            </div>
+            
+
+        </form>
+        <div class="btn-container">
+            <button class="btn" type="btn"onclick="login()">login</button>
+
+
+        </div>
+
+
+   
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
