@@ -4,6 +4,7 @@
   "description": "login testing jest",
   "main": "script.js",
   "scripts": {
+    "start": "npm run start",
     "test": "npm run test"
   },
   "author": "",

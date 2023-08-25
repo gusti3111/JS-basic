@@ -53,6 +53,8 @@ const login = () =>{
     }
 
 }
-const googleLogin = () =>{
+const googleLogin = (...gog) =>{
+     gog[] = console.log("google login")
+
 
 }

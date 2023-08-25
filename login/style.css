@@ -63,12 +63,17 @@ h1{
     margin-top: 5px;
     justify-content: center;
   }
-  .google {
-    background-color: #dd4b39;
-    color: white;
+  .google-btn {
+  
+    color: black;
     width: 50%;
     margin: auto;
-    padding: 0 50px;
+    margin: 50px;
+    font-weight: bold;
+    font-size : 21px;
+    background-color: white;
+    border-radius: 51px;
+
     margin-top: 6px;
     text-decoration: none;
   }
