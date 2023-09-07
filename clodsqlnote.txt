@@ -1,0 +1,3 @@
+password -> makanneng123
+instanceName -> instancenode
+
