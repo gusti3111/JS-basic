@@ -30,10 +30,14 @@ class userModel{
    }
    getAllModel = async() =>{
     try{
-        await User.findAll({})
+       const getall = await User.findAll()
+       console.log(getall)
+       return getall
 
-    }catch{
-        console.log(error)
+    }catch(error){
+        return error
+        
+     
 
     }
 

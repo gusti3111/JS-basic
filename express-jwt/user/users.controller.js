@@ -32,7 +32,7 @@ class userController {
         )
         return res.json({ accessToken: "Bearer" + ' ' + createToken });
       } catch (error) {
-        console.log(error);
+        // console.log(error);
         return res.status(500).json({ message: "token not created" });
 
       }
@@ -45,13 +45,17 @@ class userController {
 
   }
   getAllController = async(req,res) =>{
-
-    const getall = await userModel.getAllModel()
-    if(getall === true){
-      return res.status(200).json(getall)
-    }else{
-      return res.status(400).json({message: "not Authorized" })
+    try {
+      const getall = await userModel.getAllModel()
+      console.log(getall)
+     return getall
+      
+    } catch (error) {
+      return res.status(400).json({message: "" + error.message})
+      
     }
+
+
 
   }
 
