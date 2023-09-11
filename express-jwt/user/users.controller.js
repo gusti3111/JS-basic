@@ -1,6 +1,6 @@
 const jwtTool = require('jsonwebtoken')
 const userModel = require('./users.model')
-require('dotenv').config
+require('dotenv').config()
 class userController {
   CreateUserController = async (req, res) => {
     const { userName, IdUser } = req.body;
@@ -47,10 +47,11 @@ class userController {
   getAllController = async(req,res) =>{
     try {
       const getall = await userModel.getAllModel()
-      console.log(getall)
-     return getall
+  
+      return res.status(200).json(getall);
       
     } catch (error) {
+      console.log(error)
       return res.status(400).json({message: "" + error.message})
       
     }

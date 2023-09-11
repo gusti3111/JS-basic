@@ -28,20 +28,16 @@ class userModel{
             
         }
    }
-   getAllModel = async() =>{
-    try{
-       const getall = await User.findAll()
-       console.log(getall)
-       return getall
-
-    }catch(error){
-        return error
-        
-     
-
+   getAllModel = async() => {
+    try {
+       const users = await User.findAll({});
+       console.log(users)
+       return users;
+    } catch (error) {
+       throw error;
     }
-
-   }
+ }
+ 
 
 }
 module.exports = new userModel

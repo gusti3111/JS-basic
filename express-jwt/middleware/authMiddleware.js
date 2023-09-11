@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken')
 
-require('dotenv').config
+require('dotenv').config()
 
-function Authorization(req,res,next) {
+const AuthMiddleWare =  async(req,res,next) => {
    
   
         try{
@@ -11,7 +11,7 @@ function Authorization(req,res,next) {
                 return res.status(403).json({message:"Unauthorized"})
             }
           
-            const accessToken = authorization.split(' ')[1]
+            const accessToken = await authorization.split(' ')[1]
             const token = jwt.verify(accessToken, process.env.SECRET_KEY)
             req.token = token
             next()
@@ -20,4 +20,4 @@ function Authorization(req,res,next) {
         }
     }
     
-module.exports = Authorization
+module.exports = AuthMiddleWare
