@@ -17,7 +17,7 @@ export const Cart = () => {
 
             } else {
               // Tambahkan tindakan atau pesan untuk kasus di mana cartItems[product.id] === 0
-              return <div key={product.id}>Product {product.name} is not in the cart.</div>
+              return <div key={product.id}>{product.name} </div>
             }
 
             
